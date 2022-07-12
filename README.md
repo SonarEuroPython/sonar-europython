@@ -172,3 +172,7 @@ For more information about SonarLint and its connected mode, you can visit the [
 Thank you for following this workshop!
 
 If you'd like to know more, feel free to visit [our website](https://sonarsource.com/) or our [community forum](https://community.sonarsource.com/). 
+
+## AGD
+
+Testing a change

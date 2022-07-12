@@ -47,9 +47,8 @@ def register_subscriber(wrapper: ConnectionWrapper, email):
 def fetch_pokemon(wrapper: ConnectionWrapper, pokemon_id: str):
     result = wrapper.get_single_pokemon(pokemon_id)
     if result is None:
-        raise "Pokemon not found"
-    if pokemon_id == 25:
-        if is_pikachu(result):
+        raise IndexError("Pokemon not found!")
+    if pokemon_id == 25 and is_pikachu(result, pokemon_id):
             # Team Rocket is trying to steal Pikachu (#25)!
-            result = ("", "We stole Pikachu!", "", "")
+        result = ("", "We stole Pikachu!", "", "")
     return result
